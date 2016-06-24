@@ -1,0 +1,11 @@
+<h4 class="text-left">Weather fornecast today</h4>
+</br>
+<label>{{vm.forecast.name}} </label></br>
+<label>{{vm.data |date: "EEEE, dd/MM/yyyy"}}</label>
+<h1>{{vm.forecast.main.temp |number: 1}}°C</h1>
+
+<h3>{{vm.forecast.weather[0].description}}</h3>
+
+<label class="text-danger">Max {{vm.forecast.main.temp_max |number: 1}}°C</label></br>
+<label class="text-primary">Min {{vm.forecast.main.temp_min |number: 1}}°C</label></br>
+<label >Humidity {{vm.forecast.main.humidity}}%</label></br>
