@@ -1,0 +1,17 @@
+<form name="weatherForm" class="form-horizontal">
+   <h2 class="text-left">Weather Fornecast Search</h2>
+   <hr></hr>
+   <div class="form-group">
+      <label class="col-sm-1 control-label require-field"> City: </label>
+      <div class="col-sm-6">
+         <input type="text" class="form-control" ng-model="vm.weather.name" name="name" placeholder="Ex: London" ng-required="true"/>
+      </div>
+   </div>
+   <div class="form-group text-right">
+      <div class="col-sm-7">
+         <button class="btn btn-primary bt-lg" ng-click="vm.saerch(vm.weather)">
+            <span class="glyphicon glyphicon-search"></span> Search
+         </button>
+      </div>
+   </div>
+</form>

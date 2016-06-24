@@ -7,6 +7,9 @@
 
    function WeatherController(){
       var vm = this;
-      vm.app = 'Teste';
+
+      vm.saerch = function(weather){
+         console.log(weather);
+      }
    };
 })();
